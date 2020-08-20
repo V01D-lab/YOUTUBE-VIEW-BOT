@@ -4,18 +4,16 @@ import time
 
 
 def opening_text():
-
     print("""
                                       hello there, my name is V01D
                       I made this program to give view (just for fucking fun)
                     I didn't make this program to harm anyone or damage anything 
      I simply made it for fun and for people to boost their videos with the shity algorithm of an application known as 
-                               
-                                                  ##YOUTUBE##
 
+                                                  ##YOUTUBE##
      """)
 
-    time.sleep(5)
+    time.sleep(3)
 
     print("""
     #####
@@ -38,7 +36,7 @@ def opening_text():
 
     print("""
                                                   anyways enjoy the 'bot' 
-    
+
     """)
 
     time.sleep(3)
@@ -48,7 +46,6 @@ opening_text()
 
 
 def main():
-
     vid_url = input("vid URL --> ")
     num_of_views = int(input("amount of view --> "))
 
@@ -59,6 +56,7 @@ def main():
 
     for i in range(num_of_views):
         opening_web()
+        print(i)
 
     def killing_of_the_links():
         subprocess.run('TASKKILL /F /IM firefox.exe')
@@ -66,6 +64,8 @@ def main():
     kill_input = input("press enter to kill all the tabs")
 
     if kill_input == "":
+        killing_of_the_links()
+    else:
         killing_of_the_links()
 
 
@@ -76,3 +76,4 @@ if sid == 'yes':
     main()
 else:
     exit()
+
